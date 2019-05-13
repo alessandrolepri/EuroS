@@ -12,12 +12,10 @@ function getData(completed) {
 }
 const displayTodos = (todos) => {
   const countDiv = document.querySelector('.total')
-  countDiv.innerText = todos.length > 1 ?
-    `Total of ${todos.length} Todos` :
-    `Total of ${todos.length} Todos`
+  countDiv.innerText = todos.length > 1 ? `Total of ${todos.length} Todos` : `Total of ${todos.length} Todos`
   const todoList = document.querySelector('.details')
   todos.forEach((todo, index) => {
-    let todoItem = document.createElement('div')
+    const todoItem = document.createElement('div')
     todoItem.className = 'info'
     if(index === 0) {
       todoItem.classList.add('info-first')
@@ -30,8 +28,7 @@ const displayTodos = (todos) => {
 const addTodoItems = (item, parentDiv) => {
   Object.keys(item)
     .forEach(columnTitle => {
-      let columnDiv = document.createElement('div')
-      // columnDiv.className = columnTitle.replace(/([a-z0-9])([A-Z])/, '$1-$2').toLowerCase()
+      const columnDiv = document.createElement('div')
       if(columnTitle === 'completed') {
         columnDiv.innerText = item[columnTitle] ? 'Y' : 'N'
       } else {
