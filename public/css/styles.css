@@ -8,7 +8,7 @@
   text-decoration: underline;
 }
 
-.display-button {
+.button {
   margin-bottom: 0 30px 10px;
   display: inline-block;
   color: dodgerblue;
@@ -20,7 +20,7 @@
   border-radius: 15px;
 }
 
-.display-button:hover {
+.button:hover {
   background: green;
   color: white;
 }
@@ -42,24 +42,4 @@
   text-align: center;
   flex-direction: column;
   flex: 1;
-
-
 }
-
-/* .info > div:nth-child(1),
-.info > div:nth-child(2),
-.info > div:nth-child(4) {
-  display: flex;
-  justify-content: center;
-  width: 100px;
-
-} */
-
-/* .info > div:nth-child(3) {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  text-align: center;
-} */

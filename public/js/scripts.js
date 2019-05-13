@@ -31,7 +31,7 @@ const addTodoItems = (item, parentDiv) => {
   Object.keys(item)
     .forEach(columnTitle => {
       let columnDiv = document.createElement('div')
-      columnDiv.className = columnTitle.replace(/([a-z0-9])([A-Z])/, '$1-$2').toLowerCase()
+      // columnDiv.className = columnTitle.replace(/([a-z0-9])([A-Z])/, '$1-$2').toLowerCase()
       if(columnTitle === 'completed') {
         columnDiv.innerText = item[columnTitle] ? 'Y' : 'N'
       } else {
