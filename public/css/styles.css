@@ -1,6 +1,9 @@
+* {
+  box-sizing: content-box;
+}
+
 .total {
-  text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bolder;
   text-decoration: underline;
 }
@@ -9,11 +12,12 @@
   margin-bottom: 0 30px 10px;
   display: inline-block;
   color: dodgerblue;
-  cursor: pointer;
   text-align: center;
-  margin: 8px 16px;
-  padding: 8px 16px;
+  margin: 12px 25px;
+  padding: 12px 25px;
   background: yellow;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
 .display-button:hover {
@@ -27,29 +31,35 @@
 
 .info {
   display: flex;
-  flex: 1;
   border: solid 1px black;
 }
 
 .info > div {
   border-right: solid 1px black;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  text-align: center;
+  flex-direction: column;
+  flex: 1;
+
 
 }
 
-.info > div:nth-child(1),
+/* .info > div:nth-child(1),
 .info > div:nth-child(2),
 .info > div:nth-child(4) {
   display: flex;
   justify-content: center;
-  width: 98px;
-  line-height: 48px;
-}
+  width: 100px;
 
-.info > div:nth-child(3) {
+} */
+
+/* .info > div:nth-child(3) {
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   flex: 1;
   text-align: center;
-}
+} */
