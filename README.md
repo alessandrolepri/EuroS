@@ -1,4 +1,4 @@
-# Graduate Exercise
+
 
 ## Setup
 
